@@ -34,7 +34,7 @@ body {
 }
 
 .fas {
-  color: var(--primary-color);
+  color: #fff;
   font-size: 35px;
 }
 
@@ -119,7 +119,7 @@ body {
 
 .fa-play:hover,
 .fa-pause:hover {
-  color: #000;
+  color: Var(--primary-color);
   cursor: pointer;
 }
 
