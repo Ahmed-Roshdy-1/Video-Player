@@ -166,14 +166,22 @@ body {
 .speed {
   margin-right: 15px;
 }
+select,
+option {
+  cursor: pointer;
+}
 
 select {
+  background: transparent;
   color: var(--font-color);
   border: none;
   font-size: 18px;
   position: relative;
   top: -2.5px;
   border-radius: 5px;
+}
+select:focus {
+  outline: none;
 }
 
 select > option {
