@@ -83,14 +83,6 @@ body {
 
 /* Progress Bar */
 .progress-range {
-  margin: auto;
-  border-radius: 10px;
-  top: 15px;
-  left: 15px;
-  cursor: pointer;
-}
-
-.progress-bar {
   height: 8px;
   width: calc(100% - 30px);
   background: rgba(202, 202, 202, 0.5);
@@ -101,9 +93,19 @@ body {
   top: 15px;
   cursor: pointer;
   transition: height 0.1s ease-in-out;
-  z-index: 10;
 }
 
+.progress-range:hover {
+  height: 10px;
+}
+
+.progress-bar {
+  background: var(--primary-color);
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
 /* Left Controls ------*/
 .controls-left {
   justify-content: flex-start;
@@ -224,7 +226,7 @@ select > option {
     top: -15px;
   }
   .speed,
-  time {
+  .time {
     top: 3px;
   }
   select {
