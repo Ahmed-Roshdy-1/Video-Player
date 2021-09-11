@@ -115,9 +115,11 @@ function toggleFullscreen() {
   if (!fullscreen) {
     player.requestFullscreen();
     fullscreenIcon.classList.add("fas", "fa-compress");
+    video.classList.add("fullscreen");
   } else {
     document.exitFullscreen();
     fullscreenIcon.classList.add("fas", "fa-expand");
+    video.classList.remove("fullscreen");
   }
   fullscreen = !fullscreen;
 }
